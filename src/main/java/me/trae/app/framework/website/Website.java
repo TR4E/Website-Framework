@@ -1,6 +1,5 @@
 package me.trae.app.framework.website;
 
-import me.trae.app.App;
 import me.trae.app.framework.page.Page;
 import me.trae.app.framework.page.models.HomePage;
 import me.trae.app.framework.website.interfaces.IWebsite;
@@ -46,11 +45,5 @@ public abstract class Website implements IWebsite {
         Spark.init();
 
         UtilMessage.simpleLog("Website", "Listening: http://<var>:<var>", Arrays.asList(this.getAddress(), String.valueOf(this.getPort())));
-    }
-
-    public static void main(final String[] args) {
-        final App app = new App();
-
-        app.run();
     }
 }

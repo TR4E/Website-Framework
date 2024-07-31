@@ -2,7 +2,7 @@ package me.trae.app;
 
 import me.trae.app.framework.website.Website;
 
-public class App extends Website {
+public class TestApp extends Website {
 
     @Override
     public String getAddress() {
@@ -16,5 +16,9 @@ public class App extends Website {
 
     @Override
     public void registerPages() {
+    }
+
+    public static void main(final String[] args) {
+        new TestApp().run();
     }
 }
