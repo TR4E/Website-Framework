@@ -1,3 +1,3 @@
 Manifest-Version: 1.0
-Main-Class: me.trae.website.Main
+Main-Class: me.trae.website.App
 
